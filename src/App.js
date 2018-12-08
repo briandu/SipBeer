@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import NavHeader from './components/NavHeader';
+
 const App = styled.div`
   font-size: 16px;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -25,5 +27,6 @@ const App = styled.div`
 
 export default () => (
   <App>
+    <NavHeader />
   </App>
 );
