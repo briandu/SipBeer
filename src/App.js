@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const App = styled.div`
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 16px;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 700;
+    font-family: 'Playfair Display', Georgia, serif;
   }
 
   h1 {
