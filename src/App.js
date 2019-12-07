@@ -1,6 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const App = styled.div`
+`;
 
 export default () => (
-  <div className="App">
-  </div>
+  <App>
+  </App>
 )
