@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { color } from './components/variables';
 import NavHeader from './components/NavHeader';
+import NotficationBar from './components/NotficationBar';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import PricingPlans from './components/PricingPlans';
@@ -49,6 +50,8 @@ const Main = styled.main`
 
 export default () => (
   <App>
+    <NotficationBar />
+
     <NavHeader />
     <Main>
       <Hero />

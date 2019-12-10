@@ -14,3 +14,6 @@ export const brand = '#1a85ff';
 export const brandLight = '#eff7fd';
 export const white = '#fff';
 export const black = `${grey90}`;
+
+// Status
+export const success = '#7ed5b2';
