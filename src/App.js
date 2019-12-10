@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { color } from './components/variables';
 import NavHeader from './components/NavHeader';
 
 const App = styled.div`
@@ -19,14 +20,26 @@ const App = styled.div`
   h2 {
     font-size: 2em;
   }
-
+  
   h3 {
     font-size: 1.5em;
   }
+
+  p {
+    color: ${color.grey70};
+  }
+`;
+
+const Main = styled.main`
+  max-width: 75em;
+  margin: auto;
+  padding: 0 1em;
 `;
 
 export default () => (
   <App>
     <NavHeader />
+    <Main>
+    </Main>
   </App>
 );
