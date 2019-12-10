@@ -6,6 +6,7 @@ import NavHeader from './components/NavHeader';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import PricingPlans from './components/PricingPlans';
+import Footer from './components/Footer';
 
 const App = styled.div`
   font-size: 16px;
@@ -53,5 +54,6 @@ export default () => (
       <HowItWorks />
       <PricingPlans />
     </Main>
+    <Footer />
   </App>
 );
