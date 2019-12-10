@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Step from './Step';
+import MaxWidth from './MaxWidth';
 
-const HowItWorks = styled.section`
+const HowItWorks = styled(MaxWidth)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5em 0;
+  margin: 5em auto;
   text-align: center;
 `;
 
