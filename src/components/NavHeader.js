@@ -5,9 +5,13 @@ import { color } from './variables';
 import logo from '../assets/images/logo.svg';
 
 const NavHeader = styled.header`
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 5em;
+  background-color: ${color.white};
   border-bottom: 1px solid ${color.grey10};
 `;
 
@@ -28,6 +32,7 @@ const Nav = styled.nav`
 const NavLink = styled.a`
   margin: 0 2em;
   font-weight: 700;
+  cursor: pointer;
 `;
 
 const Logo = styled.img`
