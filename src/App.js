@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { color } from './components/variables';
 import NavHeader from './components/NavHeader';
 import Hero from './components/Hero';
+import HowItWorks from './components/HowItWorks';
 
 const App = styled.div`
   font-size: 16px;
@@ -51,6 +52,7 @@ export default () => (
     <NavHeader />
     <Main>
       <Hero />
+      <HowItWorks />
     </Main>
   </App>
 );
