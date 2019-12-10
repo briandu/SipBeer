@@ -6,6 +6,7 @@ import NavHeader from './components/NavHeader';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import PricingPlans from './components/PricingPlans';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App = styled.div`
@@ -53,6 +54,7 @@ export default () => (
       <Hero />
       <HowItWorks />
       <PricingPlans />
+      <Contact />
     </Main>
     <Footer />
   </App>
