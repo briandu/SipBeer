@@ -42,9 +42,6 @@ const App = styled.div`
 `;
 
 const Main = styled.main`
-  max-width: 75em;
-  margin: auto;
-  padding: 0 1em;
 `;
 
 export default () => (
