@@ -16,9 +16,9 @@ const Step = styled.div`
   }
 `;
 
-export default () => (
+export default ({ title, description }) => (
   <Step>
-    <Title>Lorem Ipsum</Title>
-    <Description>We select beer from around the world and send your package right to you door.</Description>
+    <Title>{title}</Title>
+    <Description>{description}</Description>
   </Step>
 );

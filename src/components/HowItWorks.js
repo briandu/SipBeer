@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import stepsData from '../data/stepsData';
 import Step from './Step';
 import MaxWidth from './MaxWidth';
 
@@ -28,9 +29,16 @@ export default () => (
     <Title>Look. Here's how it works.</Title>
 
     <Steps>
-      <Step />
-      <Step />
-      <Step />
+      {stepsData.map((step) => {
+        const { title, description } = step;
+
+        return (
+          <Step
+            title={title}
+            description={description}
+          />
+        );
+      })}
     </Steps>
   </HowItWorks>
 );
