@@ -19,15 +19,13 @@ const Item = styled.li`
   text-align: left;
 `;
 
-const ListItem = () => (
-  <Item>
-    <FontAwesomeIcon icon={faCheck} />
-    Up to 2 X 6 - pack of beers from a selection of 10 beers
-  </Item>
-);
-
-export default () => (
+export default ({ specs }) => (
   <List>
-    <ListItem>Pick up from your nearest LCBO store</ListItem>
+    {specs.map((spec) => (
+      <Item key={spec}>
+        <FontAwesomeIcon icon={faCheck} />
+        {spec}
+      </Item>
+    ))}
   </List>
 );

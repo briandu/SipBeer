@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import PlanSpecs from './PlanSpecs';
-
 import { color } from './variables';
 
 const Title = styled.h3`
@@ -31,12 +30,12 @@ const PerMonth = styled.p`
   font-size: .8em;
 `;
 
-export default () => (
+export default ({ title, price, specs }) => (
   <PricingCard>
-    <Title>Casual Drinker</Title>
-    <Price>$19.99</Price>
+    <Title>{title}</Title>
+    <Price>{price}</Price>
     <PerMonth>per month</PerMonth>
 
-    <PlanSpecs />
+    <PlanSpecs specs={specs} />
   </PricingCard>
 );

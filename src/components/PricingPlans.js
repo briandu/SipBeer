@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import pricingPlanData from '../data/pricingPlanData';
 import { color } from './variables';
 import MaxWidth from './MaxWidth';
 import PricingCard from './PricingCard';
@@ -33,8 +34,18 @@ export default () => (
       <Title>Time to choose your pricing plan.</Title>
 
       <Plans>
-        <PricingCard />
-        <PricingCard />
+        {pricingPlanData.map((plan) => {
+          const { title, price, specs } = plan;
+
+          return (
+            <PricingCard
+              key={title}
+              title={title}
+              price={price}
+              specs={specs}
+            />
+          );
+        })}
       </Plans>
     </Content>
   </PricingPlans>

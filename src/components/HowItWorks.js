@@ -34,6 +34,7 @@ export default () => (
 
         return (
           <Step
+            key={title}
             title={title}
             description={description}
           />
