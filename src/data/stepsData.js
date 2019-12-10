@@ -7,7 +7,7 @@ export default [
   {
     imgURL: '',
     title: 'We do the work',
-    description: 'We select beer from around the world and have it delivered to you or the closest LCBO store.',
+    description: 'We select beer sourced from all over Ontario and deliver it to you or the closest LCBO.',
   },
   {
     imgURL: '',
