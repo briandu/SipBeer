@@ -46,6 +46,7 @@ const Contact = styled(MaxWidth)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10em;
 
   @media (min-width: 48em) {
     flex-direction: row;
