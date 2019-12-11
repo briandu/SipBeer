@@ -9,12 +9,12 @@ const HowItWorks = styled(MaxWidth)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5em auto;
+  margin: 10em auto;
   text-align: center;
 `;
 
 const Title = styled.h2`
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 `;
 
 const Steps = styled.div`
@@ -30,11 +30,12 @@ export default () => (
 
     <Steps>
       {stepsData.map((step) => {
-        const { title, description } = step;
+        const { imgURL, title, description } = step;
 
         return (
           <Step
             key={title}
+            imgURL={imgURL}
             title={title}
             description={description}
           />
