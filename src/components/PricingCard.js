@@ -21,7 +21,7 @@ const PricingCard = styled.div`
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
   }
 
-  @media (min-width: 48em) {
+  @media (min-width: 43em) {
     margin: 0 1.5em 2em;
   }
 `;
