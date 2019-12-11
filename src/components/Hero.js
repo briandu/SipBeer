@@ -6,7 +6,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { scrollToSection } from '../helpers/helpers';
 import { color } from './variables/index';
 import MaxWidth from './MaxWidth';
-import heroImg from '../assets/images/hero.png';
+import heroImg from '../assets/images/hero.svg';
 import Button from './Button';
 
 const Hero = styled.section`
