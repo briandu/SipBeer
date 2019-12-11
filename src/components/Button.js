@@ -11,8 +11,8 @@ const Button = styled.a`
   border-radius: 10em;
 `;
 
-export default ({ text }) => (
-  <Button>
+export default ({ text, onClick }) => (
+  <Button onClick={onClick}>
     {text}
   </Button>
 );
