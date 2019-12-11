@@ -26,12 +26,11 @@ const FormContent = styled.div`
 
 const Form = styled.form``;
 
-const Submit = styled.input`
+const SubmitBtn = styled.div`
   width: 10em;
   padding: .8em 1.2em;
-  color: ${color.white};
   font-weight: 400;
-  font-size: 1em;
+  text-align: center;
   background-color: ${color.brand};
   border: 0;
   border-radius: 10em;
@@ -43,21 +42,31 @@ const Submit = styled.input`
   }
 `;
 
+const Submit = styled.input`
+  color: ${color.white};
+  font-size: 1em;
+`;
+
 const SelectField = styled.div``;
 const SelectLabel = styled.label`
   font-size: .75em;
 `;
 
-const Select = styled.select`
-  box-sizing: border-box;
-  width: 100%;
+const SelectWrap = styled.div`  
   margin: .5em 0 2em;
   padding: .75em 1em;
-  font-size: 16px;
   background-color: ${color.white};
   border: 1px solid ${color.grey30};
   border-style: solid;
   border-radius: .2em;
+`;
+
+const Select = styled.select`
+  box-sizing: border-box; 
+  width: 100%;
+  font-size: 16px;
+  background: 0;
+  border: 0;
 `;
 
 const Contact = styled(MaxWidth)`
@@ -110,24 +119,28 @@ export default ({ setNotificationIsActive }) => {
           />
           <SelectField>
             <SelectLabel>Preferred location</SelectLabel>
-            <Select>
-              {selectOptions.map((opt) => {
-                const {
-                  value, label, isDisabled, isSelected,
-                } = opt;
-                return (
-                  <option
-                    value={value}
-                    disabled={isDisabled}
-                    selected={isSelected}
-                  >
-                    {label}
-                  </option>
-                );
-              })}
-            </Select>
+            <SelectWrap>
+              <Select>
+                {selectOptions.map((opt) => {
+                  const {
+                    value, label, isDisabled, isSelected,
+                  } = opt;
+                  return (
+                    <option
+                      value={value}
+                      disabled={isDisabled}
+                      selected={isSelected}
+                    >
+                      {label}
+                    </option>
+                  );
+                })}
+              </Select>
+            </SelectWrap>
           </SelectField>
-          <Submit type="submit" />
+          <SubmitBtn>
+            <Submit type="submit" />
+          </SubmitBtn>
         </Form>
       </FormContent>
     </Contact>

@@ -35,6 +35,16 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5em;
   }
 
+  input {
+    background: 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+
   @media ${breakpoint.large} { /* tablet size 768px */
     h1 {
       font-size: 4em;
