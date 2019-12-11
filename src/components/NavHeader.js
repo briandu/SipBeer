@@ -32,10 +32,31 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
+  position: relative;
   margin: 0 1.5em;
   padding: .5em;
   font-weight: 700;
   cursor: pointer;
+
+  ::before {
+    position: absolute;
+    top: 3.5em;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: ${color.black};
+    transform: scaleX(0);
+    transition: .2s ease;
+    content: '';
+  }
+  
+  :hover {
+    ::before {
+      transform: scaleX(1);
+    }
+  }
 `;
 
 const Logo = styled.img`
