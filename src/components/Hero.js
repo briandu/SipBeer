@@ -10,7 +10,9 @@ import heroImg from '../assets/images/hero.svg';
 import Button from './Button';
 
 const Copy = styled(MaxWidth)``;
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin-top: 3em;
+`;
 
 const Description = styled.p`
   margin: 2em 0 3em;
