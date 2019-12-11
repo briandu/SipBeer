@@ -6,16 +6,11 @@ import { color } from './variables';
 import MaxWidth from './MaxWidth';
 import PricingCard from './PricingCard';
 
-const PricingPlans = styled.div`
-  margin: 5em 0;
-  background-color: ${color.brandLight};
-`;
-
 const Content = styled(MaxWidth)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em 0;
+  padding: 5em 1em;
   text-align: center;
 `;
 
@@ -25,6 +20,18 @@ const Title = styled.h2`
 
 const Plans = styled.div`
   display: flex;
+  flex-direction: column;
+`;
+
+const PricingPlans = styled.div`
+  margin: 5em 0;
+  background-color: ${color.brandLight};
+
+  @media (min-width: 43em) {
+    ${Plans} {
+      flex-direction: row;
+    }
+  }
 `;
 
 export default () => (
