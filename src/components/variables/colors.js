@@ -12,6 +12,7 @@ export const grey5 = '#f2f2f2';
 // Primary
 export const brand = '#1a85ff';
 export const brandLight = '#eff7fd';
+export const brandDark = '#1766c1';
 export const white = '#fff';
 export const black = `${grey90}`;
 

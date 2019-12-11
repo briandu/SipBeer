@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import MaxWidth from './MaxWidth';
 import InputField from '../InputField';
 
+import { color } from './variables/index';
+
 const Contact = styled(MaxWidth)`
   height: 50vh;
 `;
@@ -21,7 +23,20 @@ const Form = styled.form`
 `;
 
 const Submit = styled.input`
-  
+  width: 10em;
+  padding: .8em 1.2em;
+  color: ${color.white};
+  font-weight: 400;
+  font-size: 1em;
+  background-color: ${color.brand};
+  border: 0;
+  border-radius: 10em;
+  cursor: pointer;
+  transition: .2s ease;
+
+  :hover {
+    background-color: ${color.brandDark};
+  }
 `;
 
 export default ({ setNotificationIsActive }) => {
