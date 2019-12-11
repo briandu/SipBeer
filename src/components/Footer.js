@@ -19,7 +19,7 @@ const Content = styled(MaxWidth)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 0;
+  padding: 2em 1em;
   border-top: 1px solid ${color.grey10};
 `;
 
