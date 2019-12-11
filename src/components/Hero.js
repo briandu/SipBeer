@@ -5,6 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { scrollToSection } from '../helpers/helpers';
 import { color } from './variables/index';
+import MaxWidth from './MaxWidth';
 import heroImg from '../assets/images/hero.png';
 import Button from './Button';
 
@@ -14,12 +15,9 @@ const Hero = styled.section`
   text-align: center;
 `;
 
-const Copy = styled.div`
-  
-`;
+const Copy = styled(MaxWidth)``;
 
-const Title = styled.h1`
-`;
+const Title = styled.h1``;
 
 const Description = styled.p`
   margin: 2em 0 3em;
@@ -28,6 +26,7 @@ const Description = styled.p`
 const SignUpButton = styled(Button)``;
 
 const Image = styled.img`
+  width: 100%;
   max-width: 60em;
   margin-top: 3em;
 `;
