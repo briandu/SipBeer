@@ -7,6 +7,7 @@ import {
   faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
 
+import { scrollToSection } from '../helpers/helpers';
 import { color } from './variables';
 import MaxWidth from './MaxWidth';
 import logo from '../assets/images/logo.svg';
@@ -23,7 +24,7 @@ const Content = styled(MaxWidth)`
 `;
 
 const Logo = styled.img`
-  
+  cursor: pointer;
 `;
 
 const SocialMediaIcons = styled.div`
@@ -36,7 +37,7 @@ const SocialMediaIcons = styled.div`
 export default () => (
   <Footer>
     <Content>
-      <Logo src={logo} />
+      <Logo src={logo} onClick={() => scrollToSection('hero')} />
 
       <SocialMediaIcons>
         <FontAwesomeIcon icon={faInstagram} />

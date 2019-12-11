@@ -58,7 +58,7 @@ const AccentText = styled.span`
 `;
 
 export default () => (
-  <Hero>
+  <Hero id="hero">
     <Copy>
       <Title>Delicious Craft Beer</Title>
       <Description>
