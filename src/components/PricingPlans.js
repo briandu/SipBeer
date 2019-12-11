@@ -28,7 +28,7 @@ const Plans = styled.div`
 `;
 
 export default () => (
-  <PricingPlans>
+  <PricingPlans id="pricing-plans">
     <Content>
       <Title>Time to choose your pricing plan.</Title>
 

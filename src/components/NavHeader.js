@@ -53,7 +53,7 @@ export default () => (
       <Logo src={logo} />
       <Nav>
         <NavLink>How it works</NavLink>
-        <NavLink>Pricing</NavLink>
+        <NavLink onClick={() => scrollToSection('pricing-plans')}>Pricing</NavLink>
         <NavLink>Contact</NavLink>
       </Nav>
       <GetStartedBtn className="get-started-btn" text="Get Started" onClick={() => scrollToSection('contact')} small />
