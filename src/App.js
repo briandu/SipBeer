@@ -20,28 +20,44 @@ const App = styled.div`
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
-  
   h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
-  
   h3 {
     font-size: 1.5em;
   }
-  
   h4 {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
-  
   h5 {
     font-size: 1em;
   }
 
   p {
     color: ${color.grey70};
+    font-size: .875em;
     line-height: 1.5em;
+  }
+
+  @media (min-width: 48em) { /* tablet size 768px */
+    h1 {
+      font-size: 4em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1.25em;
+    }
+
+    p {
+      font-size: 1em;
+    }
   }
 `;
 
