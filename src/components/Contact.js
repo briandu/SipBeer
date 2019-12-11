@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { color, breakpoint } from './variables/index';
+import selectOptions from '../data/selectOptions';
 import contactImage from '../assets/images/contact-rep.svg';
 import MaxWidth from './MaxWidth';
 import InputField from '../InputField';
@@ -40,6 +41,23 @@ const Submit = styled.input`
   :hover {
     background-color: ${color.brandDark};
   }
+`;
+
+const SelectField = styled.div``;
+const SelectLabel = styled.label`
+  font-size: .75em;
+`;
+
+const Select = styled.select`
+  box-sizing: border-box;
+  width: 100%;
+  margin: .5em 0 2em;
+  padding: .75em 1em;
+  font-size: 16px;
+  background-color: ${color.white};
+  border: 1px solid ${color.grey30};
+  border-style: solid;
+  border-radius: .2em;
 `;
 
 const Contact = styled(MaxWidth)`
@@ -90,6 +108,25 @@ export default ({ setNotificationIsActive }) => {
             type="email"
             name="email"
           />
+          <SelectField>
+            <SelectLabel>Preferred location</SelectLabel>
+            <Select>
+              {selectOptions.map((opt) => {
+                const {
+                  value, label, isDisabled, isSelected,
+                } = opt;
+                return (
+                  <option
+                    value={value}
+                    disabled={isDisabled}
+                    selected={isSelected}
+                  >
+                    {label}
+                  </option>
+                );
+              })}
+            </Select>
+          </SelectField>
           <Submit type="submit" />
         </Form>
       </FormContent>
