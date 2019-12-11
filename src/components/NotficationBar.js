@@ -10,7 +10,8 @@ const NotificationBar = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: ${color.brandLight};
+  color: ${color.white};
+  background-color: ${color.brand};
   transition: .2s ease;
 
   &.active {
