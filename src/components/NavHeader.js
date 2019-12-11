@@ -61,7 +61,9 @@ const NavLink = styled.a`
 
 const Logo = styled.img`
   position: absolute;
-  left: 1em;
+  left: .7em;
+  padding: .3em;
+  cursor: pointer;
 `;
 
 const GetStartedBtn = styled(Button)`
@@ -72,7 +74,7 @@ const GetStartedBtn = styled(Button)`
 export default () => (
   <NavHeader>
     <Container>
-      <Logo src={logo} />
+      <Logo src={logo} onClick={() => scrollToSection('hero')} />
       <Nav>
         <NavLink onClick={() => scrollToSection('how-it-works')}>How it works</NavLink>
         <NavLink onClick={() => scrollToSection('pricing-plans')}>Pricing</NavLink>
