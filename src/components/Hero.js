@@ -62,7 +62,7 @@ export default () => (
     <Copy>
       <Title>Delicious Craft Beer</Title>
       <Description>
-        Delivered to your doorsteps
+        Delivered to your doorstep
         <AccentText>monthly</AccentText>
         .
       </Description>
