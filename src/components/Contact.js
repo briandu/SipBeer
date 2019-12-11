@@ -6,18 +6,20 @@ import contactImage from '../assets/images/contact-rep.svg';
 import MaxWidth from './MaxWidth';
 import InputField from '../InputField';
 
-const Contact = styled(MaxWidth)`
-`;
-
 const Title = styled.h2`
   margin-bottom: 1em;
 `;
 
 const Image = styled.img`
-  
+  order: 1;
+  min-width: 0;
+  max-width: 20em;
+  height: auto;
+  object-fit: contain;
 `;
 
 const FormContent = styled.div`
+  flex-shrink: 0;
   max-width: 22em;
 `;
 
@@ -37,6 +39,23 @@ const Submit = styled.input`
 
   :hover {
     background-color: ${color.brandDark};
+  }
+`;
+
+const Contact = styled(MaxWidth)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+    justify-content: space-around;
+
+    ${Image} {
+      order: 0;
+      max-width: 30em;
+      margin-right: 2em;
+    }
   }
 `;
 

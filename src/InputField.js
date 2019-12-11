@@ -12,6 +12,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
+  box-sizing: border-box;
   width: 100%;
   margin-top: .5em;
   padding: .75em 1em;
