@@ -12,8 +12,7 @@ import { color } from './variables';
 import MaxWidth from './MaxWidth';
 import logo from '../assets/images/logo.svg';
 
-const Footer = styled.footer`
-`;
+const Footer = styled.footer``;
 
 const Content = styled(MaxWidth)`
   display: flex;
@@ -31,6 +30,7 @@ const SocialMediaIcons = styled.div`
   .svg-inline--fa {
     margin-left: 1em;
     color: ${color.grey70};
+    cursor: pointer;
   }
 `;
 
