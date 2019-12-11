@@ -52,9 +52,9 @@ export default () => (
     <Container>
       <Logo src={logo} />
       <Nav>
-        <NavLink>How it works</NavLink>
+        <NavLink onClick={() => scrollToSection('how-it-works')}>How it works</NavLink>
         <NavLink onClick={() => scrollToSection('pricing-plans')}>Pricing</NavLink>
-        <NavLink>Contact</NavLink>
+        <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
       </Nav>
       <GetStartedBtn className="get-started-btn" text="Get Started" onClick={() => scrollToSection('contact')} small />
     </Container>

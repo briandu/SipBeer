@@ -25,7 +25,7 @@ const Steps = styled.div`
 `;
 
 export default () => (
-  <HowItWorks>
+  <HowItWorks id="how-it-works">
     <Title>Look. Here's how it works.</Title>
 
     <Steps>
