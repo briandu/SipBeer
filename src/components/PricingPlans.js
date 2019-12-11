@@ -41,12 +41,15 @@ export default () => (
 
       <Plans>
         {pricingPlanData.map((plan) => {
-          const { title, price, specs } = plan;
+          const {
+            title, imgURL, price, specs,
+          } = plan;
 
           return (
             <PricingCard
               key={title}
               title={title}
+              imgURL={imgURL}
               price={price}
               specs={specs}
             />

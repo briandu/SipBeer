@@ -6,9 +6,11 @@ import { color } from './variables';
 
 const Title = styled.h3``;
 
-const Price = styled.h2`
-  margin-top: 5em;
+const Image = styled.img`
+  margin: 1.5em 0;
 `;
+
+const Price = styled.h2``;
 
 const PricingCard = styled.div`
   max-width: 18em;
@@ -31,9 +33,12 @@ const PerMonth = styled.p`
   font-size: .8em;
 `;
 
-export default ({ title, price, specs }) => (
+export default ({
+  title, imgURL, price, specs,
+}) => (
   <PricingCard>
     <Title>{title}</Title>
+    <Image src={imgURL} alt="Pricing plan image" />
     <Price>{price}</Price>
     <PerMonth>per month</PerMonth>
 
