@@ -1,26 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { color } from './variables/index';
+import contactImage from '../assets/images/contact-rep.svg';
 import MaxWidth from './MaxWidth';
 import InputField from '../InputField';
 
-import { color } from './variables/index';
-
 const Contact = styled(MaxWidth)`
-  height: 50vh;
 `;
 
 const Title = styled.h2`
   margin-bottom: 1em;
 `;
 
+const Image = styled.img`
+  
+`;
+
 const FormContent = styled.div`
   max-width: 22em;
 `;
 
-const Form = styled.form`
-  
-`;
+const Form = styled.form``;
 
 const Submit = styled.input`
   width: 10em;
@@ -50,6 +51,7 @@ export default ({ setNotificationIsActive }) => {
 
   return (
     <Contact id="contact">
+      <Image src={contactImage} alt="Contact representative" />
       <FormContent>
         <Title>Need some help? We got your back.</Title>
         <Form onSubmit={handleSubmit}>
