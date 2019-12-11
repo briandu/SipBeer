@@ -32,7 +32,7 @@ const Nav = styled.nav`
 const NavLink = styled.a`
   position: relative;
   display: inline-block;
-  margin: 0 .75em;
+  margin: 0 1em;
   font-weight: 700;
   cursor: pointer;
 
