@@ -4,19 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { scrollToSection } from '../helpers/helpers';
-import { color } from './variables/index';
+import { color, breakpoint } from './variables/index';
 import MaxWidth from './MaxWidth';
 import heroImg from '../assets/images/hero.svg';
 import Button from './Button';
 
-const Hero = styled.section`
-  min-height: 38em;
-  margin-top: 7em;
-  text-align: center;
-`;
-
 const Copy = styled(MaxWidth)``;
-
 const Title = styled.h1``;
 
 const Description = styled.p`
@@ -37,7 +30,7 @@ const ScrollGuide = styled.div`
   justify-content: center;
   width: 4em;
   height: 4em;
-  margin: 10em auto 0;
+  margin: 5em auto 0;
   color: ${color.white};
   background-color: ${color.brand};
   border-radius: 10em;
@@ -54,6 +47,18 @@ const AccentText = styled.span`
   padding-bottom: .5em;
   font-style: italic;
   border-bottom: .1em solid ${color.grey70};
+`;
+
+const Hero = styled.section`
+  min-height: 38em;
+  margin-top: 7em;
+  text-align: center;
+
+  @media ${breakpoint.large} {
+    ${ScrollGuide} {
+      margin: 10em auto 0;
+    }
+  }
 `;
 
 export default () => (
