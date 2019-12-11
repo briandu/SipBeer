@@ -5,23 +5,30 @@ import stepsData from '../data/stepsData';
 import Step from './Step';
 import MaxWidth from './MaxWidth';
 
-const HowItWorks = styled(MaxWidth)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10em auto;
-  text-align: center;
-`;
-
 const Title = styled.h2`
   margin-bottom: 3em;
 `;
 
 const Steps = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
+  max-width: 25em;
+`;
+
+const HowItWorks = styled(MaxWidth)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em auto;
+  text-align: center;
+
+  @media (min-width: 48em) {
+    ${Steps} {
+      flex-direction: row;
+      max-width: 100%;
+    }
+  }
 `;
 
 export default () => (

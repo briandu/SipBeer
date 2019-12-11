@@ -10,16 +10,22 @@ const Description = styled.p`
   margin-top: 1.5em;
 `;
 
+const Image = styled.img`
+  max-width: 21.5em;
+  margin-bottom: 2em;
+`;
+
 const Step = styled.div`
-  max-width: 20em;
+  flex: 1 1 33.3%;
+  margin-bottom: 3em;
 
   ${Title} {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
   }
-`;
 
-const Image = styled.img`
-  margin-bottom: 2em;
+  @media (min-width: 48em) {
+    margin: 0 1em 3em;
+  }
 `;
 
 export default ({title, description }) => (
