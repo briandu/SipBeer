@@ -32,7 +32,8 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-  margin: 0 2em;
+  margin: 0 1.5em;
+  padding: .5em;
   font-weight: 700;
   cursor: pointer;
 `;
