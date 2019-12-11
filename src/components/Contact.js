@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { color } from './variables/index';
+import { color, breakpoint } from './variables/index';
 import contactImage from '../assets/images/contact-rep.svg';
 import MaxWidth from './MaxWidth';
 import InputField from '../InputField';
@@ -48,7 +48,7 @@ const Contact = styled(MaxWidth)`
   align-items: center;
   margin-bottom: 10em;
 
-  @media (min-width: 48em) {
+  @media ${breakpoint.large} {
     flex-direction: row;
     justify-content: space-around;
 

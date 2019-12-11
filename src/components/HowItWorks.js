@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { breakpoint } from './variables';
 import stepsData from '../data/stepsData';
 import Step from './Step';
 import MaxWidth from './MaxWidth';
@@ -23,7 +24,7 @@ const HowItWorks = styled(MaxWidth)`
   margin: 10em auto;
   text-align: center;
 
-  @media (min-width: 48em) {
+  @media ${breakpoint.large} {
     ${Steps} {
       flex-direction: row;
       max-width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// import imgURL from '../assets/images/select-package.png';
+import { breakpoint } from './variables';
 
 const Title = styled.h4`
 `;
@@ -23,7 +23,7 @@ const Step = styled.div`
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
   }
 
-  @media (min-width: 48em) {
+  @media ${breakpoint.large} {
     margin: 0 1em 3em;
   }
 `;

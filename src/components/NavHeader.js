@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { scrollToSection } from '../helpers/helpers';
-import { color } from './variables';
+import { color, breakpoint } from './variables';
 import BeerIcon from '../assets/images/beer-icon.svg';
 import PriceIcon from '../assets/images/price-icon.svg';
 import PhoneIcon from '../assets/images/phone-icon.svg';
@@ -80,7 +80,7 @@ const NavHeader = styled.header`
   background-color: ${color.white};
   border-bottom: 1px solid ${color.grey10};
 
-  @media (min-width: 30em) {
+  @media ${breakpoint.small} {
     ${MobileLink} {
       display: none;
     }
@@ -98,7 +98,7 @@ const NavHeader = styled.header`
     }
   }
   
-  @media (min-width: 48em) {
+  @media ${breakpoint.large} {
     ${Container} {
       justify-content: center;
     }

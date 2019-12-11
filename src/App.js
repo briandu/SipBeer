@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { color } from './components/variables';
+import { color, breakpoint } from './components/variables';
 import NavHeader from './components/NavHeader';
 import NotficationBar from './components/NotficationBar';
 import Hero from './components/Hero';
@@ -41,7 +41,7 @@ const App = styled.div`
     line-height: 1.5em;
   }
 
-  @media (min-width: 48em) { /* tablet size 768px */
+  @media ${breakpoint.large} { /* tablet size 768px */
     h1 {
       font-size: 4em;
     }
