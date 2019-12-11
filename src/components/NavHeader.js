@@ -56,7 +56,7 @@ export default () => (
         <NavLink>Pricing</NavLink>
         <NavLink>Contact</NavLink>
       </Nav>
-      <GetStartedBtn className="get-started-btn" text="Get Started" small />
+      <GetStartedBtn className="get-started-btn" text="Get Started" onClick={() => scrollToSection('contact')} small />
     </Container>
   </NavHeader>
 );
