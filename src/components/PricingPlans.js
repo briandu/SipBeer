@@ -7,7 +7,6 @@ import MaxWidth from './MaxWidth';
 import PricingCard from './PricingCard';
 
 const PricingPlans = styled.div`
-  height: 50vh;
   margin: 5em 0;
   background-color: ${color.brandLight};
 `;
