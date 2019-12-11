@@ -8,9 +8,14 @@ import MaxWidth from './MaxWidth';
 
 const NotificationBar = styled.div`
   position: fixed;
-  top: 5em;
+  top: 0;
   width: 100%;
   background-color: ${color.brandLight};
+  transition: .2s ease;
+
+  &.active {
+    top: 5em;
+  }
 `;
 
 const Message = styled(MaxWidth)`
@@ -29,8 +34,8 @@ const AccentText = styled.span`
   text-decoration: underline;
 `;
 
-export default () => (
-  <NotificationBar>
+export default ({ noficationIsActive }) => (
+  <NotificationBar className={noficationIsActive ? 'active' : ''}>
     <Message>
       <FontAwesomeIcon icon={faCheckCircle} />
       <AccentText>Success!</AccentText>

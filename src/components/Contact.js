@@ -20,27 +20,42 @@ const Form = styled.form`
   
 `;
 
-export default () => (
-  <Contact>
-    <FormContent>
-      <Title>Need some help? We got your back.</Title>
-      <Form>
-        <InputField
-          label="Full name"
-          type="text"
-          name="name"
-        />
-        <InputField
-          label="Phone number"
-          type="tel"
-          name="phone number"
-        />
-        <InputField
-          label="Email"
-          type="email"
-          name="email"
-        />
-      </Form>
-    </FormContent>
-  </Contact>
-);
+const Submit = styled.input`
+  
+`;
+
+export default ({ setNotificationIsActive }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setNotificationIsActive(true);
+    setTimeout(() => {
+      setNotificationIsActive(false);
+    }, 3000);
+  };
+
+  return (
+    <Contact>
+      <FormContent>
+        <Title>Need some help? We got your back.</Title>
+        <Form onSubmit={handleSubmit}>
+          <InputField
+            label="Full name"
+            type="text"
+            name="name"
+          />
+          <InputField
+            label="Phone number"
+            type="tel"
+            name="phone number"
+          />
+          <InputField
+            label="Email"
+            type="email"
+            name="email"
+          />
+          <Submit type="submit" />
+        </Form>
+      </FormContent>
+    </Contact>
+  );
+};

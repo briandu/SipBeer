@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { color } from './components/variables';
@@ -48,17 +48,26 @@ const App = styled.div`
 const Main = styled.main`
 `;
 
-export default () => (
-  <App>
-    <NotficationBar />
+export default () => {
+  const [noficationIsActive, setNotificationIsActive] = useState(false);
 
-    <NavHeader />
-    <Main>
-      <Hero />
-      <HowItWorks />
-      <PricingPlans />
-      <Contact />
-    </Main>
-    <Footer />
-  </App>
-);
+  return (
+    <App>
+      <NotficationBar
+        noficationIsActive={noficationIsActive}
+      />
+
+      <NavHeader />
+      <Main>
+        <Hero />
+        <HowItWorks />
+        <PricingPlans />
+        <Contact
+          noficationIsActive={noficationIsActive}
+          setNotificationIsActive={setNotificationIsActive}
+        />
+      </Main>
+      <Footer />
+    </App>
+  );
+};
