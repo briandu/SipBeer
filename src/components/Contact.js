@@ -49,7 +49,7 @@ export default ({ setNotificationIsActive }) => {
   };
 
   return (
-    <Contact>
+    <Contact id="contact">
       <FormContent>
         <Title>Need some help? We got your back.</Title>
         <Form onSubmit={handleSubmit}>
