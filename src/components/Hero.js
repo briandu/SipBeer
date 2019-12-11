@@ -42,6 +42,12 @@ const ScrollGuide = styled.div`
   color: ${color.white};
   background-color: ${color.brand};
   border-radius: 10em;
+  cursor: pointer;
+  transition: .2s ease;
+
+  :hover {
+    background-color: ${color.brandDark};
+  }
 `;
 
 const AccentText = styled.span`
@@ -64,7 +70,7 @@ export default () => (
     </Copy>
     <Image src={heroImg} />
 
-    <ScrollGuide>
+    <ScrollGuide onClick={() => scrollToSection('how-it-works')}>
     <FontAwesomeIcon icon={faChevronDown} />
     </ScrollGuide>
   </Hero>
