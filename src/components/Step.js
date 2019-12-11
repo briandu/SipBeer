@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import imgURL from '../assets/images/select-package.png';
+
 const Title = styled.h4`
 `;
 
@@ -16,8 +18,13 @@ const Step = styled.div`
   }
 `;
 
-export default ({ title, description }) => (
+const Image = styled.img`
+  margin-bottom: 2em;
+`;
+
+export default ({title, description }) => (
   <Step>
+    <Image src={imgURL} />
     <Title>{title}</Title>
     <Description>{description}</Description>
   </Step>
