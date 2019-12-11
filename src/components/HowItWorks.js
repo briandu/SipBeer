@@ -21,10 +21,12 @@ const HowItWorks = styled(MaxWidth)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10em auto;
+  margin: 5em auto;
   text-align: center;
 
   @media ${breakpoint.large} {
+    margin: 10em auto;
+
     ${Steps} {
       flex-direction: row;
       max-width: 100%;
