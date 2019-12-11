@@ -44,7 +44,7 @@ const Logo = styled.img`
 
 const GetStartedBtn = styled(Button)`
   position: absolute;
-  right: 0;
+  right: 1em;
 `;
 
 export default () => (
