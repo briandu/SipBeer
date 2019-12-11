@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { scrollToSection } from '../helpers/helpers';
 import { color } from './variables';
+import Button from './Button';
 import logo from '../assets/images/logo.svg';
 
 const NavHeader = styled.header`
@@ -40,13 +42,9 @@ const Logo = styled.img`
   left: 1em;
 `;
 
-const Button = styled.a`
+const GetStartedBtn = styled(Button)`
   position: absolute;
-  right: 1em;
-  padding: .8em 1.2em;
-  color: ${color.white};
-  background-color: ${color.brand};
-  border-radius: 10em;
+  right: 0;
 `;
 
 export default () => (
@@ -58,7 +56,7 @@ export default () => (
         <NavLink>Pricing</NavLink>
         <NavLink>Contact</NavLink>
       </Nav>
-      <Button>Get Started</Button>
+      <GetStartedBtn className="get-started-btn" text="Get Started" small />
     </Container>
   </NavHeader>
 );
